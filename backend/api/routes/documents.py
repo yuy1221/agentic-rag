@@ -14,7 +14,7 @@ from backend.api.resources import (
     save_upload_file,
 )
 from backend.db.models import User
-from backend.infra.auth import require_admin
+from backend.infra.auth import get_current_user, require_admin
 from backend.jobs import DELETE_STEPS, delete_job_manager, upload_job_manager
 from backend.schemas import (
     DocumentDeleteJobResponse,
@@ -134,7 +134,7 @@ async def list_documents(_: User = Depends(require_admin)):
 async def upload_document_async(
     background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
-    _: User = Depends(require_admin),
+    _: User = Depends(get_current_user),
 ):
     filename = file.filename or ""
     if not filename:
@@ -181,7 +181,7 @@ async def list_upload_jobs(_: User = Depends(require_admin)):
 async def upload_document_async(
     background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
-    _: User = Depends(require_admin),
+    _: User = Depends(get_current_user),
 ):
     try:
         filename = file.filename or ""
@@ -239,7 +239,7 @@ async def get_delete_job(job_id: str, _: User = Depends(require_admin)):
 
 
 @router.post("/documents/upload", response_model=DocumentUploadResponse)
-async def upload_document(file: UploadFile = File(...), _: User = Depends(require_admin)):
+async def upload_document(file: UploadFile = File(...), _: User = Depends(get_current_user)):
     try:
         filename = file.filename or ""
         if not filename:

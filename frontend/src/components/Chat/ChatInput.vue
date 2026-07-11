@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="input-area-wrapper">
     <!-- File upload indicator -->
     <div v-if="uploadState.file" class="upload-preview-bar">
@@ -45,7 +45,7 @@
         @compositionstart="handleCompositionStart"
         @compositionend="handleCompositionEnd"
         @input="autoResize"
-        placeholder="和喵喵说点什么吧... (Shift+Enter 换行)"
+        placeholder="向 deep 提问... (Shift+Enter 换行)"
         rows="1"
         ref="textareaRef"
       ></textarea>

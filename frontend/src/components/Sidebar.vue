@@ -1,8 +1,8 @@
 <template>
   <aside class="sidebar">
     <div class="sidebar-header">
-      <div class="logo-icon">🐱</div>
-      <h2>喵喵助手</h2>
+      <div class="logo-icon">d</div>
+      <h2>deep</h2>
     </div>
     <nav class="sidebar-nav">
       <button @click="onNewChat" :class="['nav-btn', { active: chatStore.activeNav === 'newChat' }]">

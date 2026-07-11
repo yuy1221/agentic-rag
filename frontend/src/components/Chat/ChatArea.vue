@@ -3,7 +3,7 @@
     <header class="chat-header">
       <div class="header-info">
         <div class="status-dot"></div>
-        <span>喵喵在线中...</span>
+        <span>deep 在线中...</span>
       </div>
     </header>
 

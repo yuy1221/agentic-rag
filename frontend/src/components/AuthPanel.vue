@@ -1,6 +1,6 @@
 <template>
   <div class="auth-panel">
-    <h2>{{ authStore.authMode === 'login' ? '登录 SuperMew' : '注册 SuperMew' }}</h2>
+    <h2>{{ authStore.authMode === 'login' ? '登录 deep' : '注册 deep' }}</h2>
     <p>登录后即可使用聊天和历史记录；管理员可管理文档知识库。</p>
     <div class="auth-form">
       <input v-model="authStore.authForm.username" type="text" placeholder="用户名" @keyup.enter="onSubmit" />
