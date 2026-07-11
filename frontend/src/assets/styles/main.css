@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --primary-color: #ff9e99;
     --primary-light: #ffb7b2;
     --secondary-color: #ffdac1;
@@ -1552,4 +1552,80 @@ span.cite-ref:hover {
 .stop-btn:hover {
     background-color: #ee5a5a !important;
     transform: scale(1.1) !important;
+}
+
+
+/* ---- Chat input file upload ---- */
+.upload-preview-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 30px;
+  background: #f0f7ff;
+  border-bottom: 1px solid #d0e3f7;
+  font-size: 0.9rem;
+}
+.upload-file-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.upload-file-info i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+.btn-upload {
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-upload:hover {
+  background: #ff8e89;
+}
+.btn-cancel-upload {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  background: transparent;
+  color: var(--text-light);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-cancel-upload:hover {
+  background: #f5f5f5;
+}
+.upload-status {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+.upload-status.processing {
+  color: #f08c00;
+}
+.upload-status.done {
+  color: #2f9e44;
+  font-weight: 600;
+}
+.upload-status.error {
+  color: #d9480f;
+}
+.upload-bar-track {
+  height: 4px;
+  background: #e9ecef;
+  margin: 0 30px;
+}
+.upload-bar-fill {
+  height: 100%;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+.upload-bar-fill.processing {
+  background: linear-gradient(90deg, var(--primary-color), #f08c00);
 }
