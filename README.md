@@ -194,9 +194,8 @@ SuperMew-main/
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-```
+git clone https://github.com/yuy1221/agentic-rag.git
+cd agentic-rag
 
 ### 2. 配置环境变量
 
@@ -251,6 +250,10 @@ cd ..
 
 ```bash
 # 启动后端（托管前端静态资源）
+cd backend
+python app.py（无科学上网启动代理：$env:HF_ENDPOINT="https://hf-mirror.com"; python app.py
+
+#或者
 uv run uvicorn backend.app:app --host 0.0.0.0 --port 8000 --reload
 ```
 
