@@ -342,13 +342,13 @@ npm run dev      # 启动开发服务器 http://localhost:3000
 
 ## 开发日志
 
-- **2026-07-01** — Multi-Agent RAG 架构：LangGraph 并行子 Agent + Step-back 重写 + 精排阈值
+- **2026-06-13** — Multi-Agent RAG 架构：LangGraph 并行子 Agent + Step-back 重写 + 精排阈值
 - **2026-06-02** — 通用 RAG 增强：思考模式切换 + 会话摘要 + 智能标题生成
 - **2026-06-01** — Rerank 流水线重构：召回-合并-精排模块化
-- **2026-04-08** — 本地嵌入模型 (bge-m3) + BM25 统计持久化
-- **2026-03-21** — 后端升级：JWT 鉴权 + PostgreSQL + Redis + RBAC
-- **2026-03-13** — 三级滑动窗口分块 + Auto-Merging 父子检索
-- **2026-02-19** — RAG 实时思考链路修复 (SSE 事件跨线程调度)
+- **2026-04-29** — 本地嵌入模型 (bge-m3) + BM25 统计持久化
+- **2026-04-29** — 后端升级：JWT 鉴权 + PostgreSQL + Redis + RBAC
+- **2026-04-16** — 三级滑动窗口分块 + Auto-Merging 父子检索
+- **2026-04-11** — RAG 实时思考链路修复 (SSE 事件跨线程调度)
 
 ---
 
